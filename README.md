@@ -1,10 +1,10 @@
-# README for Numbers Script
+# README for Cars Script
 
 ## Author Information
 - **Name:** Justin Oh  
 - **Course:** CPSC 298 Computer Science Colloquium  
 - **Assignment:** Cars Script
-- **Date:** 10/22/25
+- **Date:** 11/03/25
 
 ## Program Description
 This script prompts the user to enter a number between 1 and 3 on a menu that is presented to the user. They can add a new car to the inventory and see what is currently on the list. 
@@ -22,7 +22,7 @@ To run the script interactively:
 ./cars.sh
 ```
 
-To test with an input file (for example, `numbers-input`):
+To test with an input file (for example, `cars-input`):
 ```bash
 ./cars.sh < cars-input
 ```
@@ -35,26 +35,25 @@ To test with an input file (for example, `numbers-input`):
 
 ## Core Logic Example
 ```bash
-echo " Old Car Inventory Menu "
-  echo " 1. Add a new car "
-  echo " 2. List cars "
-  echo " 3. Quit "
+   echo " Old Car Inventory Menu "
+   echo " 1. Add a new car "
+   echo " 2. List cars "
+   echo " 3. Quit "
 
-  read -r -p "Enter your choice [1-3]" choice
-  echo
+   read -r -p "Enter your choice [1-3]" choice
+   echo
 
 ```
 
 ## Testing Results
-When tested with the input file `numbers-input` containing:
+When tested with the input file `cars-input` containing:
 ```
-1948:Ford:sedan
-1952:Chevrolet:coupe
-1960:Ford:Mustang
-1972:Chevrolet:Corvette
-1977:Plymouth:Roadrunner
-1984:Toyota:Supra
-1984:Toyota:Supra
+1
+1984
+Toyota
+Supra
+2
+3
 ```
 The script outputs:
 ```
@@ -90,10 +89,7 @@ Goodbye
 ```
 
 ## Example Validations
-| Input | Output Behavior |
-|--------|------------------|
-| 3 | 1 Odd  2 Even  3 Odd |
-| 7 | 1 Odd  2 Even  3 Odd  4 Even  5 Odd  6 Even  7 Odd |
+
 
 ## Challenges and Solutions
 [Optional: Describe any challenges you encountered while creating this script and how you solved them. This could include debugging issues, understanding regular expressions, or Git workflow problems.]
